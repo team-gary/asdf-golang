@@ -63,7 +63,7 @@ install_golang () {
     local tempdir=$(my_mktemp $platform)
 		local download_url=$(get_download_url $version $platform $arch)
 
-    curl -SLfo $download_url -o "${tempdir}/archive.tar.gz"
+    curl -sSL $download_url -o "${tempdir}/archive.tar.gz"z
 
     tar -C "$install_path" -xzf "${tempdir}/archive.tar.gz"
 
