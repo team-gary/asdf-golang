@@ -1,10 +1,13 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -eu
+set -o pipefail
 
 # This method is not stable, according to https://github.com/golang/go/issues/21667#issuecomment-325457742
 RELEASES_URL="https://storage.googleapis.com/golang?marker="
 NEXT_MARKER=""
 TRUNCATED="true"
-IFS=$"\n\t"
+IFS=$'\n\t'
 
 # Shamelessly stolen from: https://stackoverflow.com/questions/893585/how-to-parse-xml-in-bash {
 function read_dom() {
