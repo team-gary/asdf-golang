@@ -1,4 +1,4 @@
-![Build Status](https://github.com/team-gary/asdf-golang/workflows/CI/badge.svg)
+![CI](https://github.com/team-gary/asdf-golang/workflows/CI/badge.svg)
 
 # asdf-golang
 golang plugin for [asdf](https://github.com/asdf-vm/asdf) version manager
